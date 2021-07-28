@@ -1,0 +1,18 @@
+input_of = int(input())
+new_list_inputs = []
+for i in range(input_of):
+    new_list_inputs += [input()]
+length_list = []
+for i in range(input_of):
+    length_list += [len(new_list_inputs[i])]
+
+for i in range(input_of):
+    even_no = ''
+    odd_no = ''
+    for j in range(0,length_list[i]):
+        
+        if j%2 == 0:
+            even_no += new_list_inputs[i][j]
+        else:
+            odd_no += new_list_inputs[i][j]
+    print(even_no + " " + odd_no)
